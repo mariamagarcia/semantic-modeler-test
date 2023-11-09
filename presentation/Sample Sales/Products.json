@@ -1,0 +1,61 @@
+{
+  "presentationTable" : {
+    "name" : "Products",
+    "presentationColumns" : [ {
+      "name" : "Brand",
+      "sourceLogicalColumn" : "logicalColumn:Sample Sales BM.D2 Products.Brand"
+    }, {
+      "name" : "Product",
+      "sourceLogicalColumn" : "logicalColumn:Sample Sales BM.D2 Products.Prod Dsc"
+    }, {
+      "name" : "Type",
+      "sourceLogicalColumn" : "logicalColumn:Sample Sales BM.D2 Products.Type"
+    }, {
+      "name" : "Line of Business",
+      "sourceLogicalColumn" : "logicalColumn:Sample Sales BM.D2 Products.Lob"
+    }, {
+      "name" : "Sequence",
+      "sourceLogicalColumn" : "logicalColumn:Sample Sales BM.D2 Products.Sequence"
+    }, {
+      "name" : "Brand Key",
+      "sourceLogicalColumn" : "logicalColumn:Sample Sales BM.D2 Products.Brand Key"
+    }, {
+      "name" : "Lob Key",
+      "sourceLogicalColumn" : "logicalColumn:Sample Sales BM.D2 Products.Lob Key"
+    }, {
+      "name" : "Type Key",
+      "sourceLogicalColumn" : "logicalColumn:Sample Sales BM.D2 Products.Type Key"
+    } ],
+    "hierarchies" : [ {
+      "name" : "H1",
+      "sourceLogicalTable" : "logicalTable:Sample Sales BM.D2 Products",
+      "localization" : { },
+      "levels" : [ {
+        "name" : "Total",
+        "sourceLogicalLevel" : "logicalLevel:Sample Sales BM.D2 Products.Total",
+        "displayColumn" : "presentationColumn:Sample Sales.Products.Product",
+        "localization" : { }
+      }, {
+        "name" : "Detalle",
+        "sourceLogicalLevel" : "logicalLevel:Sample Sales BM.D2 Products.Detalle",
+        "displayColumn" : "presentationColumn:Sample Sales.Products.Product",
+        "localization" : { }
+      }, {
+        "name" : "Product Brand",
+        "sourceLogicalLevel" : "logicalLevel:Sample Sales BM.D2 Products.Product Brand",
+        "displayColumn" : "presentationColumn:Sample Sales.Products.Brand",
+        "localization" : { }
+      }, {
+        "name" : "Product LOB",
+        "sourceLogicalLevel" : "logicalLevel:Sample Sales BM.D2 Products.Product LOB",
+        "displayColumn" : "presentationColumn:Sample Sales.Products.Line of Business",
+        "localization" : { }
+      }, {
+        "name" : "Product Type",
+        "sourceLogicalLevel" : "logicalLevel:Sample Sales BM.D2 Products.Product Type",
+        "displayColumn" : "presentationColumn:Sample Sales.Products.Type",
+        "localization" : { }
+      } ]
+    } ]
+  }
+}
